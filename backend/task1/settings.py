@@ -83,17 +83,12 @@ WSGI_APPLICATION = 'task1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
-        'NAME': 'legistai-test',
-        'USER': 'legistaitest',
-        'PASSWORD': 'admin@123',
-        'HOST': 'legistai-test.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
-            'Encrypt': 'yes',
-            'TrustServerCertificate': 'no',
-            'Connection Timeout': '30',
+        'ENGINE': 'djongo',
+        'NAME': 'test_db',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+        'host': 'mongodb+srv://nadeenshbayeh:6B8VgruWVoVHsZaN@cluster0.l3bz3.mongodb.net/products?retryWrites=true&w=majority&appName=Cluster0',
+
         },
     }
 }

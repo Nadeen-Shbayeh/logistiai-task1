@@ -52,8 +52,8 @@ const  Navbar: React.FC<NavbarProps> =({ userData }) => {
         <Image
         src={personImage}
         alt="Profile"
-        width={40} // Specify the width
-        height={40} // Specify the height
+        width={40} 
+        height={40}
         className={styles.profileImage} // Use className for styling
         />
 
